@@ -1,0 +1,52 @@
+<!--Create a form that allows users to submit their `name`, `email` `address` and `message`.
+
+Ensure that the form has proper validation and displays an error message if any field is left empty using the `required` attribute.--->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE edge" />
+    <meta name="viewport" content="width=device-width, initial-scale-1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form action="https://www.google.com/search">
+      <h1>Form</h1>
+      <section>
+        <h2>User data</h2>
+        <label for="firstName">Name</label>
+        <input
+          type="firstName"
+          name="firstName"
+          id="firstName"
+          placeholder="firstName"
+          required
+        />
+        <label for="lastName">LastName</label>
+        <input
+          type="lastName"
+          name="lastName"
+          id="lastName"
+          placeholder="lastName"
+          required
+        />
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="email"
+          required
+        />
+      </section>
+
+      <section>
+        <h3>Comment</h3>
+        <label for="message">Message</label>
+        <textarea name="message" id="message" col="20" rows="10"></textarea>
+
+        <button type="submit">Submit form</button>
+      </section>
+    </form>
+  </body>
+</html>

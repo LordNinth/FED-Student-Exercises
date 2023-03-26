@@ -1,0 +1,22 @@
+:root {
+  --brandColor: hsl(220, 55%, 83%);
+  --secondaryColor: hsl(205, 57%, 19%);
+  --complimentaryColor: hsl(25, 68%, 45%);
+
+  --textColor: #ffffff;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
+  min-height: 100vh;
+  color: var(--textColor);
+  background-color: var(--brandColor);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}

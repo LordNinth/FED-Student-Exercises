@@ -1,0 +1,68 @@
+/*resets all elements*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    border-radius: none;
+  }
+
+  body
+{
+  min-height: 100svh; /*scalable viewport height*/
+  max-width: 100svw;
+  background-color: azure;
+  color: rgb(18, 32, 18)
+  
+}
+
+header  {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+header nav ul li { 
+    display: inline;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+#container{
+  display: flex;
+  align-items: center;  
+  justify-content: space-evenly;
+  border: 2px rgb(31, 136, 62);
+  padding: 50px;
+}
+
+#container #submitCheck {
+  padding: 3px;
+  border: 2px solid rgb(103, 128, 111);
+}
+
+#numberCheckerInput
+{
+  padding: 3px;
+  border: 2px solid rgb(103, 128, 111);
+}
+
+#container2{
+  display: flex;
+  align-items: center;  
+  justify-content: space-evenly;
+  border: 2px rgb(31, 136, 62);
+  padding: 50px;
+}
+
+#container2 #submitGuess {
+  padding: 3px;
+  border: 2px solid rgb(103, 128, 111);
+}
+
+#guessCheckerInput
+{
+  padding: 3px;
+  border: 2px solid rgb(103, 128, 111);
+}

@@ -1,35 +1,62 @@
 //exercise 1
+const numberCheckerForm = document.querySelector("#numberCheckerForm")
 
-//arrow function
-/*const evenCheck1 = (num) => {
-    if (num%2 === 0){
-        return "Even"
-    }
-    return "odd"
+const numCheck = (num) =>{
+    return !(num%2)
 }
+    
 
-console.log(evenCheck1(0)) */
 
-/* Exercise 2
+numberCheckerForm.addEventListener("submit",(event)=> {
+    const numberCheckerInput =document.querySelector("#numberCheckerInput")
+    const numberCheckerResult =document.querySelector("#numberCheckerResult")
+    const numberValue = numberCheckerInput.value
+    event.preventDefault() //stops refreshing browser on submit
+    
+    
 
-Create a function that generates a random number between 1 and 10.
+    if (numCheck(numberValue)){
+        numberCheckerResult.textContent="even"
 
->💡 Hint: `prompt()` the user to guess the number and provide feedback if the guess is too high or too low.
->
->💡 Hint: break it down into chunks
->
->```js
->if ( number too high ){
->    // do this
->}
->else if ( number too low ){
->    // do this instead
->}
-*/
+    } else {
+        numberCheckerResult.textContent="odd"
+    }
+
+    })
+
+
+//ex 2
+
+const guessCheckerForm = document.querySelector("#guessCheckerForm");
+const randNumber = Math.floor(Math.random() * 10) + 1;
+
+
+
+//event listener for click on form
+guessCheckerForm.addEventListener("submit", (event)=> {
+    const guessCheckerInput = document.querySelector("#guessCheckerInput");
+    //const guessResult = document.querySelector("#guessCheckerResult")
+    const guessNumber = guessCheckerInput.value;
+   
+    event.preventDefault() //stops refreshing browser on submit
+
+    if(guessNumber == randNumber){
+       
+        alert("Congratulation" + randNumber + "is the right number")
+    }
+    else if (guessNumber> randNumber){
+       
+        alert("try small number" )
+      }
+    else
+    { 
+        alert("try greater number" )
+    }
+})
+
 
 
 
 
 
    
-

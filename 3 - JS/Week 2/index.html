@@ -1,13 +1,44 @@
 <!DOCTYPE html>
 <head>
-    <h1> User prompt</h1>
-   
+    
+<link rel="stylesheet" href="style.css">
+    
+
 </head>
 <body>
-    <h2> Prompt box</h2>
-    <button onclick="numGuess()"> Test </button>
-    <p id="demo"></p>
+    <header>
+        <h1> Weekly Exercises</h1>
+    <nav>
+        
+        <ul>
+            <li> <a href="CSS">CSS</a>           </li>
+            <li> <a href="JS">JS</a>           </li>
+        </ul>
+    </nav>
+</header>
+    <section id ="container">
+        <h2> Ex 1-Num Checker</h2>
+        <form id="numberCheckerForm">
+            <label for="numberCheckerInput">Number Input</label>
+            <input id="numberCheckerInput" type="number" placeholder="enter a numnber">
+            <button type="submit" id= "submitCheck">Check if even</button>
+        </form>
+        <div id="numberCheckerResult"></div>
+    </section>
 
-    <script src="wk2.js"></script>
+    <section id ="container2">
+        <h2> Ex2 - GuessChecker</h2>
+        <form id="guessCheckerForm">
+            <label for="guessCheckerInput">Enter guess</label>
+            <input id="guessCheckerInput" type="number" placeholder="enter a number">
+            <button type="submit" id ="submitGuess">Guess check</button>
+        </form>
+        <div id="guessCheckerResult"></div>
+     
+    </section>
+  
+ 
+
+    <script src="wk2.js" defer></script>
 </body>
 </html>

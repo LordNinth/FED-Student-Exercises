@@ -1,0 +1,8 @@
+#flexRow{
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    justify-content: center;
+    background-color: aquamarine;
+
+}
